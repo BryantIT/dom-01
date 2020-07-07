@@ -19,7 +19,11 @@ for(const listItemEl of listItemElements) {
 // playing with querySelector
 const ul = document.querySelector('ul')
 
-console.error('---Start of Queary Selector Practice---')
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
+console.log('--- Start of Queary Selector Practice Children ---')
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
 
 console.warn('Main Element')
 console.log(ul) // Returns the first ul
@@ -39,4 +43,40 @@ console.log(ul.lastChild) // Returns last child node
 console.warn('Last Child Element')
 console.log(ul.lastElementChild) // Returns last child Element
 
-console.error('---End of Queary Selector Practice---')
+console.log('------------------------------------------------')
+console.log('------------------------------------------------')
+console.log('--- End of Queary Selector Practice Children ---')
+console.log('------------------------------------------------')
+console.log('------------------------------------------------')
+
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
+console.log('--- Start of Queary Selector Practice Parent ---')
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
+
+
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
+console.log('--- End of Queary Selector Practice Parent ---')
+console.log('--------------------------------------------------')
+console.log('--------------------------------------------------')
+
+
+const section = document.querySelector('section')
+const button = document.querySelector('button')
+
+// section.style.backgroundColor = 'blue'
+
+section.className = 'red-bg'
+
+button.addEventListener('click', () => {
+  // if (section.className === 'red-bg visible') {
+  //   section.className = 'red-bg invisible'
+  // } else {
+  //   section.className = 'red-bg visible'
+  // }
+
+  // section.classList.toggle('visible')
+  section.classList.toggle('invisible')
+})
